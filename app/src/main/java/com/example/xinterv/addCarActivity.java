@@ -16,6 +16,15 @@ import java.util.Date;
 
 public class addCarActivity extends AppCompatActivity {
 
+    public static final String EXTRA_IMMATRICULATION = "com.example.xinterv.immatriculation";
+    public static final String EXTRA_MARQUE = "com.example.xinterv.marque";
+    public static final String EXTRA_MODELE = "com.example.xinterv.modele";
+    public static final String EXTRA_COULEUR = "com.example.xinterv.couleur";
+    public static final String EXTRA_PUISSANCE = "com.example.xinterv.puissance";
+    public static final String EXTRA_CATEGORIE = "com.example.xinterv.categorie";
+    public static final String EXTRA_BOITE = "com.example.xinterv.boite";
+    public static final String EXTRA_ANNEE = "com.example.xinterv.annee";
+
     EditText editTextImmatriculation, editTextMarque, editTextModele, editTextCouleur, editTextPuissance,
             editTextCategorie, editTextBoite, editTextAnnee;
 
@@ -45,6 +54,25 @@ public class addCarActivity extends AppCompatActivity {
             // On envoie sur la page d'info
             public void onClick(View viewInfo) {
                 Intent viewCarInfo = new Intent(addCarActivity.this, carInfoActivity.class);
+
+                String immatriculationValue = editTextImmatriculation.getText().toString();
+                String marqueValue = editTextMarque.getText().toString();
+                String modeleValue = editTextModele.getText().toString();
+                String couleurValue = editTextCouleur.getText().toString();
+                String puissanceValue = editTextPuissance.getText().toString();
+                String categorieValue = editTextCategorie.getText().toString();
+                String boiteValue = editTextBoite.getText().toString();
+                String anneeValue = editTextAnnee.getText().toString();
+
+                viewCarInfo.putExtra(EXTRA_IMMATRICULATION, immatriculationValue);
+                viewCarInfo.putExtra(EXTRA_MARQUE, marqueValue);
+                viewCarInfo.putExtra(EXTRA_MODELE, modeleValue);
+                viewCarInfo.putExtra(EXTRA_COULEUR, couleurValue);
+                viewCarInfo.putExtra(EXTRA_PUISSANCE, puissanceValue);
+                viewCarInfo.putExtra(EXTRA_CATEGORIE, categorieValue);
+                viewCarInfo.putExtra(EXTRA_BOITE, boiteValue);
+                viewCarInfo.putExtra(EXTRA_ANNEE, anneeValue);
+
                 startActivity(viewCarInfo);
             }
         });
