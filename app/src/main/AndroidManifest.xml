@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Xinterv">
         <activity
+            android:name=".carInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addCarActivity"
+            android:exported="false" />
+        <activity
             android:name=".AuthActivity"
             android:exported="true">
             <intent-filter>
@@ -18,6 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
