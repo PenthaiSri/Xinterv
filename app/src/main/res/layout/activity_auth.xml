@@ -14,46 +14,81 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:background="#7116AA"
-        android:gravity="left" >
+        android:gravity="left"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:text="Maintenance"
             android:textColor="#FFFFFF"
             android:textSize="20sp" />
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/PageTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Authentification"
-        android:textSize="32sp"
-        android:textColor="#7116AA"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="79dp" />
-
-    <TextView
         android:id="@+id/textViewUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Identifiant"
-        android:textSize="18sp"
         android:textColor="#7116AA"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="237dp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="239dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="75dp"
+        android:ems="10"
+        android:hint="Identifiant"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/PageTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="Email"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="263dp" />
+        android:layout_marginTop="42dp"
+        android:text="Authentification"
+        android:textColor="#7116AA"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="40dp"
+        android:text="Connexion réussie"
+        android:textColor="#274A0D"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonConnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textViewPwd"
@@ -62,42 +97,51 @@
         android:text="Mot de passe"
         android:textColor="#7116AA"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="372dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="67dp"
         android:ems="10"
         android:hint="Mot de passe"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="396dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias="0.576" />
 
     <Button
         android:id="@+id/buttonConnect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Connexion"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="517dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.231"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.741" />
 
     <Button
         android:id="@+id/buttonQuit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Quitter"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="517dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toEndOf="@+id/buttonConnect"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.741" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Connexion réussie"
-        android:visibility="invisible"
-        android:textColor="#6AED0C"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="469dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
