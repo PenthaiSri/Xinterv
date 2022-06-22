@@ -46,7 +46,8 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             // On envoie sur la page d'ajout des propriétaires
             public void onClick(View viewSetOwner) {
-
+                Intent setOwnerActivity = new Intent(MenuActivity.this, AddOwnerActivity.class);
+                startActivity(setOwnerActivity);
             }
         });
     }

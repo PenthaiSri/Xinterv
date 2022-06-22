@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Xinterv">
         <activity
+            android:name=".OwnerInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddOwnerActivity"
             android:exported="false" />
         <activity
