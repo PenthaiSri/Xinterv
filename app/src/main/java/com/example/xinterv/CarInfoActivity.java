@@ -3,6 +3,9 @@ package com.example.xinterv;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import android.os.Bundle;
@@ -11,11 +14,17 @@ public class CarInfoActivity extends AppCompatActivity {
 
     TextView immatriculation, marque, modele, couleur, puissance, categorie, boite, annee;
 
+    ImageButton bouton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_car_info);
 
+        // Partie graphique
+        // Boutons
+        bouton = (ImageButton) findViewById(R.id.imageButton2);
+        // TextView
         immatriculation = (TextView) findViewById(R.id.textImma);
         marque = (TextView) findViewById(R.id.textMarque);
         modele = (TextView) findViewById(R.id.textModele);
@@ -45,5 +54,14 @@ public class CarInfoActivity extends AppCompatActivity {
         categorie.setText(categorieValue);
         boite.setText(boiteValue);
         annee.setText(anneeValue);
+
+        // Si le bouton retour est cliqué
+        bouton.setOnClickListener(new View.OnClickListener(){
+            // On envoi sur la page principale
+            public void onClick(View viewMenu) {
+                Intent viewMenuPage = new Intent(CarInfoActivity.this, MenuActivity.class);
+                startActivity(viewMenuPage);
+            }
+        });
     }
 }

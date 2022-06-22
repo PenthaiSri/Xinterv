@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class AddCarActivity extends AppCompatActivity {
 
@@ -22,7 +24,9 @@ public class AddCarActivity extends AppCompatActivity {
     EditText editTextImmatriculation, editTextMarque, editTextModele, editTextCouleur, editTextPuissance,
             editTextCategorie, editTextBoite, editTextAnnee;
 
-    Button buttonInfo;
+    ImageButton boutonOnOff;
+
+    Button boutonInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +34,9 @@ public class AddCarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_car);
 
         // Elements de l'interface graphique
+
         // Boutons
-        buttonInfo = (Button) findViewById(R.id.buttonInfo);
+        boutonInfo = (Button) findViewById(R.id.buttonInfo2);
         // EditText
         editTextImmatriculation = (EditText) findViewById(R.id.editTextImmatriculation);
         editTextMarque = (EditText) findViewById(R.id.editTextMarque);
@@ -43,7 +48,7 @@ public class AddCarActivity extends AppCompatActivity {
         editTextAnnee = (EditText) findViewById(R.id.editTextDate);
 
         // Si le boutons infos est cliqué
-        buttonInfo.setOnClickListener(new View.OnClickListener() {
+        boutonInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             // On envoie sur la page d'info
             public void onClick(View viewInfo) {

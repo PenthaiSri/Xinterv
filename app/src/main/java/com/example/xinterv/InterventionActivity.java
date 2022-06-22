@@ -20,12 +20,16 @@ public class InterventionActivity extends AppCompatActivity {
 
     EditText editTextNumero, editTextDate, editTextType, editTextDuree, editTextResponsable, editTextDesc;
 
+    Button infos;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intervention);
 
         // Elements de l'interface graphique
+        // Boutons
+        infos = (Button) findViewById(R.id.buttonInfo);
         // EditText
         editTextNumero = (EditText) findViewById(R.id.editTextNumero);
         editTextDate = (EditText) findViewById(R.id.editTextDate);
@@ -35,5 +39,28 @@ public class InterventionActivity extends AppCompatActivity {
         editTextDesc = (EditText) findViewById(R.id.editTextDesc);
 
         // Si le bouton info est cliqué
+        infos.setOnClickListener(new View.OnClickListener(){
+            @Override
+            // On envoie sur la page d'infos
+            public void onClick(View viewInfo){
+                Intent viewIntervInfo = new Intent(InterventionActivity.this, InterventionInfoActivity.class);
+
+                String numeroValue = editTextNumero.getText().toString();
+                String dateValue = editTextDate.getText().toString();
+                String typeValue = editTextType.getText().toString();
+                String dureeValue = editTextDuree.getText().toString();
+                String resposanbleValue = editTextResponsable.getText().toString();
+                String descValue = editTextDesc.getText().toString();
+
+                viewIntervInfo.putExtra(EXTRA_NUMERO, numeroValue);
+                viewIntervInfo.putExtra(EXTRA_DATE, dateValue);
+                viewIntervInfo.putExtra(EXTRA_TYPE, typeValue);
+                viewIntervInfo.putExtra(EXTRA_DUREE, dureeValue);
+                viewIntervInfo.putExtra(EXTRA_RESPONSABLE, resposanbleValue);
+                viewIntervInfo.putExtra(EXTRA_DESC, descValue);
+
+                startActivity(viewIntervInfo);
+            }
+        });
     }
 }

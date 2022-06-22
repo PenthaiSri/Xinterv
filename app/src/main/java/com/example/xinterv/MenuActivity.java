@@ -30,5 +30,24 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(setCarActivity);
             }
         });
+
+        // Lorsque le bouton saisie des interventions est cliqué
+        buttonSetInterv.setOnClickListener(new View.OnClickListener(){
+            @Override
+            // On envoie sur la page d'ajout des interventions
+            public void onClick(View viewSetInterv) {
+                Intent setIntervActivity = new Intent(MenuActivity.this, InterventionActivity.class);
+                startActivity(setIntervActivity);
+            }
+        });
+
+        // Lorsque le bouton saisie des propriétaire est cliqué
+        buttonSetOwner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            // On envoie sur la page d'ajout des propriétaires
+            public void onClick(View viewSetOwner) {
+
+            }
+        });
     }
 }

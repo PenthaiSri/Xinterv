@@ -10,47 +10,13 @@
     <!-- Header Layout -->
 
     <TextView
-        android:id="@+id/textModele"
-        android:layout_width="142dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="61dp"
-        android:gravity="center"
-        android:text="Modèle"
-        android:textColor="#000000"
-        android:background="#A59897"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintVertical_bias="0.15" />
-
-    <TextView
-        android:id="@+id/textCouleur"
-        android:layout_width="142dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="61dp"
-        android:gravity="center"
-        android:text="Couleur"
-        android:textColor="#000000"
-        android:background="#A59897"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintVertical_bias="0.256" />
-
-    <TextView
-        android:id="@+id/textAnnee"
+        android:id="@+id/textType"
         android:layout_width="142dp"
         android:layout_height="55dp"
         android:layout_marginTop="61dp"
         android:background="#A59897"
         android:gravity="center"
-        android:text="Année"
+        android:text="Type"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,16 +24,16 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintVertical_bias="0.684" />
+        app:layout_constraintVertical_bias="0.157" />
 
     <TextView
-        android:id="@+id/textBoite"
+        android:id="@+id/textDuree"
         android:layout_width="142dp"
         android:layout_height="55dp"
         android:layout_marginTop="61dp"
         android:background="#A59897"
         android:gravity="center"
-        android:text="Boîte de vitesse"
+        android:text="Durée"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,32 +41,32 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintVertical_bias="0.577" />
+        app:layout_constraintVertical_bias="0.269" />
 
     <TextView
-        android:id="@+id/textImma"
+        android:id="@+id/textNumero"
         android:layout_width="142dp"
         android:layout_height="55dp"
-        android:gravity="center"
-        android:text="Immatriculation"
-        android:textColor="#000000"
         android:background="#A59897"
+        android:gravity="center"
+        android:text="Numéro"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/header"
-        app:layout_constraintVertical_bias="0.196" />
+        app:layout_constraintVertical_bias="0.226" />
 
     <TextView
-        android:id="@+id/textCategorie"
+        android:id="@+id/textDescription"
         android:layout_width="142dp"
-        android:layout_height="55dp"
+        android:layout_height="150dp"
         android:layout_marginTop="61dp"
         android:background="#A59897"
         android:gravity="center"
-        android:text="Catégorie"
+        android:text="Description"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -108,41 +74,41 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintVertical_bias="0.469" />
+        app:layout_constraintVertical_bias="0.612" />
 
     <TextView
-        android:id="@+id/textPuissance"
+        android:id="@+id/textResponsable"
         android:layout_width="142dp"
         android:layout_height="55dp"
         android:layout_marginTop="61dp"
-        android:gravity="center"
-        android:text="Puissance"
-        android:textColor="#000000"
         android:background="#A59897"
+        android:gravity="center"
+        android:text="Responsable"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintVertical_bias="0.363" />
+        app:layout_constraintVertical_bias="0.381" />
 
     <TextView
-        android:id="@+id/textMarque"
+        android:id="@+id/textDate"
         android:layout_width="142dp"
         android:layout_height="55dp"
         android:layout_marginTop="61dp"
-        android:gravity="center"
-        android:text="Marque"
-        android:textColor="#000000"
         android:background="#A59897"
+        android:gravity="center"
+        android:text="Date"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <RelativeLayout
         android:id="@+id/header"
@@ -169,28 +135,29 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Infos saisies du véhicule"
+        android:gravity="center"
+        android:text="Infos saisies des interventions"
         android:textColor="#000000"
         android:textSize="32sp"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/header"
-        app:layout_constraintVertical_bias="0.088" />
+        app:layout_constraintVertical_bias="0.069" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="42dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textAnnee"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/textDescription"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/bouton"
         tools:ignore="SpeakableTextPresentCheck" />
 
