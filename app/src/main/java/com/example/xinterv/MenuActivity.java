@@ -59,8 +59,11 @@ public class MenuActivity extends AppCompatActivity {
         // Si le bouton quitter est cliqué
         boutonQuit.setOnClickListener(new View.OnClickListener() {
             @Override
+            // On ferme toutes les activités
             public void onClick(View view2) {
-                finish();
+                Intent intent = new Intent(getApplicationContext(), AuthActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
             }
         });
     }

@@ -37,6 +37,7 @@ public class AuthActivity extends AppCompatActivity {
         // Lorsque que le bouton quitter est cliqué
         buttonQuit.setOnClickListener(new View.OnClickListener() {
             @Override
+            // On ferme l'acitivé
             public void onClick(View view2) {
                 finish();
             }

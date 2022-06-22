@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import android.os.Bundle;
+import android.widget.ImageButton;
 
 public class InterventionActivity extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class InterventionActivity extends AppCompatActivity {
 
     EditText editTextNumero, editTextDate, editTextType, editTextDuree, editTextResponsable, editTextDesc;
 
-    Button infos;
+    ImageButton infos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class InterventionActivity extends AppCompatActivity {
 
         // Elements de l'interface graphique
         // Boutons
-        infos = (Button) findViewById(R.id.buttonInfo);
+        infos = (ImageButton) findViewById(R.id.imageButton6);
         // EditText
         editTextNumero = (EditText) findViewById(R.id.editTextNumero);
         editTextDate = (EditText) findViewById(R.id.editTextDate);

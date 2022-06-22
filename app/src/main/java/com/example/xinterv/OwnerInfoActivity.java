@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class OwnerInfoActivity extends AppCompatActivity {
 
     TextView nom, prenom, telephone, adresse;
-
+    Button retour;
     ImageButton bouton;
 
     @Override
@@ -29,6 +29,7 @@ public class OwnerInfoActivity extends AppCompatActivity {
 
         // Boutons
         bouton = (ImageButton) findViewById(R.id.imageButton);
+        retour = (Button) findViewById(R.id.buttonReturn);
 
         // On récupère les valeurs des champs
         Intent ownerInfo = getIntent();
@@ -43,12 +44,20 @@ public class OwnerInfoActivity extends AppCompatActivity {
         telephone.setText(telephoneValue);
         adresse.setText(adresseValue);
 
-        // Si le bouton retour est cliqué
+        // Si le bouton envoyer est cliqué
         bouton.setOnClickListener(new View.OnClickListener(){
             // On envoi sur la page principale
             public void onClick(View viewMenu) {
                 Intent viewMenuPage = new Intent(OwnerInfoActivity.this, MenuActivity.class);
                 startActivity(viewMenuPage);
+            }
+        });
+        // Si le bouton retour est cliqué
+        retour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent viewInsertPage = new Intent(OwnerInfoActivity.this, AddOwnerActivity.class);
+                startActivity(viewInsertPage);
             }
         });
     }

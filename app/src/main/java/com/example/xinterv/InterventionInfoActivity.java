@@ -13,6 +13,8 @@ public class InterventionInfoActivity extends AppCompatActivity {
 
     TextView numero, date, type, duree, responsable, description;
 
+    Button retour;
+
     ImageButton bouton;
 
     @Override
@@ -23,6 +25,7 @@ public class InterventionInfoActivity extends AppCompatActivity {
         //Elements de la partie graphique
         // Bouton
         bouton = (ImageButton) findViewById(R.id.imageButton);
+        retour = (Button) findViewById(R.id.buttonReturn);
         //TextViews
         numero = (TextView) findViewById(R.id.textNumero);
         date = (TextView) findViewById(R.id.textDate);
@@ -48,12 +51,20 @@ public class InterventionInfoActivity extends AppCompatActivity {
         responsable.setText(responsableValue);
         description.setText(descValue);
 
-        // Si le bouton retour est cliqué
+        // Si le bouton envoyé est cliqué
         bouton.setOnClickListener(new View.OnClickListener(){
             // On envoi sur la page principale
             public void onClick(View viewMenu) {
                 Intent viewMenuPage = new Intent(InterventionInfoActivity.this, MenuActivity.class);
                 startActivity(viewMenuPage);
+            }
+        });
+        // Si le bouton retour est cliqué
+        retour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent viewInsertPage = new Intent(InterventionInfoActivity.this, InterventionActivity.class);
+                startActivity(viewInsertPage);
             }
         });
     }

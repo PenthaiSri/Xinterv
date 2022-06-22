@@ -14,6 +14,8 @@ public class CarInfoActivity extends AppCompatActivity {
 
     TextView immatriculation, marque, modele, couleur, puissance, categorie, boite, annee;
 
+    Button retour;
+
     ImageButton bouton;
 
     @Override
@@ -24,6 +26,7 @@ public class CarInfoActivity extends AppCompatActivity {
         // Partie graphique
         // Boutons
         bouton = (ImageButton) findViewById(R.id.imageButton2);
+        retour = (Button) findViewById(R.id.buttonReturn);
         // TextView
         immatriculation = (TextView) findViewById(R.id.textImma);
         marque = (TextView) findViewById(R.id.textMarque);
@@ -55,12 +58,20 @@ public class CarInfoActivity extends AppCompatActivity {
         boite.setText(boiteValue);
         annee.setText(anneeValue);
 
-        // Si le bouton retour est cliqué
+        // Si le bouton envoyer est cliqué
         bouton.setOnClickListener(new View.OnClickListener(){
             // On envoi sur la page principale
             public void onClick(View viewMenu) {
                 Intent viewMenuPage = new Intent(CarInfoActivity.this, MenuActivity.class);
                 startActivity(viewMenuPage);
+            }
+        });
+        // Si le bouton retour est cliqué
+        retour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent viewInsertPage = new Intent(CarInfoActivity.this, AddCarActivity.class);
+                startActivity(viewInsertPage);
             }
         });
     }

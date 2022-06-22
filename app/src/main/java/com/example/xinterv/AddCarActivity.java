@@ -24,9 +24,7 @@ public class AddCarActivity extends AppCompatActivity {
     EditText editTextImmatriculation, editTextMarque, editTextModele, editTextCouleur, editTextPuissance,
             editTextCategorie, editTextBoite, editTextAnnee;
 
-    ImageButton boutonOnOff;
-
-    Button boutonInfo;
+    ImageButton boutonInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +34,7 @@ public class AddCarActivity extends AppCompatActivity {
         // Elements de l'interface graphique
 
         // Boutons
-        boutonInfo = (Button) findViewById(R.id.buttonInfo2);
+        boutonInfo = (ImageButton) findViewById(R.id.imageButton5);
         // EditText
         editTextImmatriculation = (EditText) findViewById(R.id.editTextImmatriculation);
         editTextMarque = (EditText) findViewById(R.id.editTextMarque);
