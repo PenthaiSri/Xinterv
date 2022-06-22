@@ -3,18 +3,12 @@ package com.example.xinterv;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
-import java.util.Date;
-
-public class addCarActivity extends AppCompatActivity {
+public class AddCarActivity extends AppCompatActivity {
 
     public static final String EXTRA_IMMATRICULATION = "com.example.xinterv.immatriculation";
     public static final String EXTRA_MARQUE = "com.example.xinterv.marque";
@@ -53,7 +47,7 @@ public class addCarActivity extends AppCompatActivity {
             @Override
             // On envoie sur la page d'info
             public void onClick(View viewInfo) {
-                Intent viewCarInfo = new Intent(addCarActivity.this, carInfoActivity.class);
+                Intent viewCarInfo = new Intent(AddCarActivity.this, CarInfoActivity.class);
 
                 String immatriculationValue = editTextImmatriculation.getText().toString();
                 String marqueValue = editTextMarque.getText().toString();

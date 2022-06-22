@@ -4,11 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.widget.TextView;
-import android.widget.Button;
 
 import android.os.Bundle;
 
-public class carInfoActivity extends AppCompatActivity {
+public class CarInfoActivity extends AppCompatActivity {
 
     TextView immatriculation, marque, modele, couleur, puissance, categorie, boite, annee;
 
@@ -28,14 +27,14 @@ public class carInfoActivity extends AppCompatActivity {
 
         // On récupère les valeurs des champs
         Intent carInfo = getIntent();
-        String immatriculationValue = carInfo.getStringExtra(addCarActivity.EXTRA_IMMATRICULATION);
-        String marqueValue = carInfo.getStringExtra(addCarActivity.EXTRA_MARQUE);
-        String modeleValue = carInfo.getStringExtra(addCarActivity.EXTRA_MODELE);
-        String couleurValue = carInfo.getStringExtra(addCarActivity.EXTRA_COULEUR);
-        String puissanceValue = carInfo.getStringExtra(addCarActivity.EXTRA_PUISSANCE);
-        String categorieValue = carInfo.getStringExtra(addCarActivity.EXTRA_CATEGORIE);
-        String boiteValue = carInfo.getStringExtra(addCarActivity.EXTRA_BOITE);
-        String anneeValue = carInfo.getStringExtra(addCarActivity.EXTRA_ANNEE);
+        String immatriculationValue = carInfo.getStringExtra(AddCarActivity.EXTRA_IMMATRICULATION);
+        String marqueValue = carInfo.getStringExtra(AddCarActivity.EXTRA_MARQUE);
+        String modeleValue = carInfo.getStringExtra(AddCarActivity.EXTRA_MODELE);
+        String couleurValue = carInfo.getStringExtra(AddCarActivity.EXTRA_COULEUR);
+        String puissanceValue = carInfo.getStringExtra(AddCarActivity.EXTRA_PUISSANCE);
+        String categorieValue = carInfo.getStringExtra(AddCarActivity.EXTRA_CATEGORIE);
+        String boiteValue = carInfo.getStringExtra(AddCarActivity.EXTRA_BOITE);
+        String anneeValue = carInfo.getStringExtra(AddCarActivity.EXTRA_ANNEE);
 
         // On envoie les données
         immatriculation.setText(immatriculationValue);

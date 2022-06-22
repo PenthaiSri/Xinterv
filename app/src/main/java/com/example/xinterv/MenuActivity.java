@@ -4,11 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -29,7 +26,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             // On envoie sur la page d'ajout des véhicules
             public void onClick(View viewSetCar) {
-                Intent setCarActivity = new Intent(MenuActivity.this, addCarActivity.class);
+                Intent setCarActivity = new Intent(MenuActivity.this, AddCarActivity.class);
                 startActivity(setCarActivity);
             }
         });

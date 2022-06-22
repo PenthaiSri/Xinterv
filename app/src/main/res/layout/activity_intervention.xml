@@ -30,11 +30,11 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/textViewAnnee"
+        android:id="@+id/textViewDesc"
         android:layout_width="150dp"
         android:layout_height="25dp"
         android:layout_marginTop="41dp"
-        android:text="Année"
+        android:text="Description"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,44 +42,14 @@
         app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintVertical_bias="0.64" />
 
     <TextView
-        android:id="@+id/textViewBoite"
+        android:id="@+id/textViewResponsable"
         android:layout_width="150dp"
         android:layout_height="25dp"
         android:layout_marginTop="41dp"
-        android:text="Boîte de vitesse"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696" />
-
-    <TextView
-        android:id="@+id/textViewCatégorie"
-        android:layout_width="150dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="41dp"
-        android:text="Catégorie"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.604" />
-
-    <TextView
-        android:id="@+id/textViewPuissance"
-        android:layout_width="150dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="41dp"
-        android:text="Puissance"
+        android:text="Responsable"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,11 +60,11 @@
         app:layout_constraintVertical_bias="0.515" />
 
     <TextView
-        android:id="@+id/textViewCouleur"
+        android:id="@+id/textViewDuree"
         android:layout_width="150dp"
         android:layout_height="25dp"
         android:layout_marginTop="41dp"
-        android:text="Couleur"
+        android:text="Durée"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -105,83 +75,62 @@
         app:layout_constraintVertical_bias="0.424" />
 
     <EditText
-        android:id="@+id/editTextBoite"
+        android:id="@+id/editTextDesc"
         android:layout_width="220dp"
-        android:layout_height="60dp"
+        android:layout_height="120dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="28dp"
         android:background="#D8BF94"
         android:ems="10"
-        android:hint="Boîte de vitesse"
-        android:inputType="text"
         android:gravity="center"
+        android:hint="Description"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewMarque"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71" />
+        app:layout_constraintVertical_bias="0.68" />
 
     <EditText
-        android:id="@+id/editTextCategorie"
+        android:id="@+id/editTextDate"
         android:layout_width="220dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="28dp"
         android:background="#D8BF94"
         android:ems="10"
-        android:hint="Catégorie"
+        android:hint="Date"
         android:inputType="text"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewMarque"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.617" />
-
-    <EditText
-        android:id="@+id/editTextMarque"
-        android:layout_width="220dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="28dp"
-        android:background="#D8BF94"
-        android:ems="10"
-        android:hint="Marque"
-        android:inputType="text"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewMarque"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.244" />
 
     <EditText
-        android:id="@+id/editTextCouleur"
+        android:id="@+id/editTextDuree"
         android:layout_width="220dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="28dp"
         android:background="#D8BF94"
         android:ems="10"
-        android:hint="Couleur"
+        android:hint="Durée"
         android:inputType="text"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewMarque"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.43" />
 
     <TextView
-        android:id="@+id/textViewModele"
+        android:id="@+id/textViewType"
         android:layout_width="150dp"
         android:layout_height="25dp"
         android:layout_marginTop="41dp"
-        android:text="Modèle"
+        android:text="Type de la panne"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -192,47 +141,45 @@
         app:layout_constraintVertical_bias="0.329" />
 
     <EditText
-        android:id="@+id/editTextPuissance"
+        android:id="@+id/editTextResponsable"
         android:layout_width="220dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="28dp"
         android:background="#D8BF94"
         android:ems="10"
-        android:hint="Puissance"
-        android:inputType="text"
         android:gravity="center"
+        android:hint="Responsable"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewMarque"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.524" />
 
     <EditText
-        android:id="@+id/editTextImmatriculation"
+        android:id="@+id/editTextNumero"
         android:layout_width="220dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="28dp"
         android:background="#D8BF94"
         android:ems="10"
-        android:hint="Immatriculation"
+        android:hint="Numéro"
         android:inputType="text"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewMarque"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.15" />
 
     <TextView
-        android:id="@+id/textViewMarque"
+        android:id="@+id/textViewDate"
         android:layout_width="150dp"
         android:layout_height="25dp"
         android:layout_marginTop="41dp"
-        android:text="Marque"
+        android:text="Date d'intervention"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -243,29 +190,28 @@
         app:layout_constraintVertical_bias="0.242" />
 
     <EditText
-        android:id="@+id/editTextModele"
+        android:id="@+id/editTextType"
         android:layout_width="220dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="28dp"
         android:background="#D8BF94"
         android:ems="10"
-        android:hint="Modèle"
+        android:hint="Type"
         android:inputType="text"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewMarque"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.337" />
 
     <TextView
-        android:id="@+id/textViewImmatriculation2"
+        android:id="@+id/textViewNumero"
         android:layout_width="150dp"
         android:layout_height="25dp"
         android:layout_marginTop="41dp"
-        android:text="Immatriculation"
+        android:text="Numéro"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -282,7 +228,7 @@
         android:layout_marginStart="169dp"
         android:layout_marginEnd="184dp"
         android:gravity="center"
-        android:text="Saisie des véhicules"
+        android:text="Saisie des interventions"
         android:textColor="#160620"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -303,24 +249,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="220dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="24dp"
-        android:background="#D8BF94"
-        android:ems="10"
-        android:inputType="date"
-        android:hint="Année"
-        android:gravity="center"
-        app:layout_constraintBottom_toTopOf="@+id/buttonInfo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewAnnee"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.994" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
