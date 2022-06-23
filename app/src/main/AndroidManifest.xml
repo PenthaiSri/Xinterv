@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Xinterv">
         <activity
+            android:name=".ListOwnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListIntervActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListCarActivity"
+            android:exported="false" />
+        <activity
             android:name=".OwnerInfoActivity"
             android:exported="false" />
         <activity
