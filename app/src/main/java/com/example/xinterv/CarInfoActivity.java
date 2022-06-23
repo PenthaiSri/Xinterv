@@ -10,7 +10,13 @@ import android.widget.TextView;
 
 import android.os.Bundle;
 
+import com.example.xinterv.Classe.Vehicule;
+import com.example.xinterv.Models.VehiculeModel;
+
 public class CarInfoActivity extends AppCompatActivity {
+
+    private Vehicule vehicule = null;
+    private VehiculeModel vModel = null;
 
     TextView immatriculation, marque, modele, couleur, puissance, categorie, boite, annee;
 
@@ -63,7 +69,14 @@ public class CarInfoActivity extends AppCompatActivity {
             // On envoi sur la page principale
             public void onClick(View viewMenu) {
                 Intent viewMenuPage = new Intent(CarInfoActivity.this, MenuActivity.class);
+                // On envoie les données en BDD
+                //vModel.open();
+                //vModel.createVehicule(immatriculationValue, marqueValue, modeleValue, couleurValue, puissanceValue,
+                //        categorieValue, boiteValue, anneeValue);
+                //vModel.close();
                 startActivity(viewMenuPage);
+
+
             }
         });
         // Si le bouton retour est cliqué
