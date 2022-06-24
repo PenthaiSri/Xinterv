@@ -9,7 +9,7 @@ public class Vehicule {
     public int id;
     public String immat, marque, modele, couleur, puissance, categorie, boite, annee;
 
-    public Vehicule() { }
+    public Vehicule(View.OnClickListener onClickListener) { }
 
     public Vehicule(String immat, String marque, String modele, String couleur, String puissance,
                     String categorie, String boite, String annee) {
@@ -21,6 +21,10 @@ public class Vehicule {
         this.categorie = categorie;
         this.boite = boite;
         this.annee = annee;
+    }
+
+    public Vehicule() {
+
     }
 
 

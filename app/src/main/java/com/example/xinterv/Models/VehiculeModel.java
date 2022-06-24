@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.view.View;
 
 import com.example.xinterv.Classe.Vehicule;
 import com.example.xinterv.Helper.DataBaseHelper;
@@ -15,7 +16,7 @@ import java.util.List;
 public class VehiculeModel {
 
     // Champ de la base de données
-    private SQLiteDatabase garage;
+    private SQLiteDatabase garage = null;
     private DataBaseHelper dbHelper;
     private String[] allColumns = {
         DataBaseHelper.v_immat, DataBaseHelper.v_marque, DataBaseHelper.v_modele, DataBaseHelper.v_couleur,
@@ -26,12 +27,19 @@ public class VehiculeModel {
         dbHelper = new DataBaseHelper(context);
     }
 
+    public VehiculeModel(View.OnClickListener onClickListener) {
+    }
+
     public void open() throws SQLException {
-        garage = dbHelper.getWritableDatabase();
+            garage = dbHelper.getWritableDatabase();
     }
 
     public void close() {
         dbHelper.close();
+    }
+
+    public SQLiteDatabase getGarage(){
+        return garage;
     }
 
     public Vehicule createVehicule(String immatriculation, String marque, String modele, String couleur, String puissance,
